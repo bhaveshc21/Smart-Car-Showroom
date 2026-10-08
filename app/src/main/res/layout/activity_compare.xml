@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- HEADER -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compare Cars ⚖️"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compare specifications and choose the right car"
+                android:textSize="14sp"
+                android:textColor="#94A3B8"
+                android:layout_marginBottom="20dp"/>
+
+
+            <!-- CAR NAMES -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFeatureHeader"
+                    android:layout_width="130dp"
+                    android:layout_height="65dp"
+                    android:text="FEATURE"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_header"/>
+
+                <TextView
+                    android:id="@+id/tvCar1Name"
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:text="Car 1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_compare_header"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvCar2Name"
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:text="Car 2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_compare_header"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvCar3Name"
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:text="Car 3"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_compare_header"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- PRICE -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Price"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_feature"/>
+
+                <TextView
+                    android:id="@+id/tvPrice1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvPrice2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvPrice3"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- FUEL -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Fuel"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_feature"/>
+
+                <TextView
+                    android:id="@+id/tvFuel1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvFuel2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvFuel3"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- TRANSMISSION -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Transmission"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_feature"/>
+
+                <TextView
+                    android:id="@+id/tvTransmission1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvTransmission2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvTransmission3"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- MILEAGE -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Mileage"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_feature"/>
+
+                <TextView
+                    android:id="@+id/tvMileage1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvMileage2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvMileage3"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- ENGINE -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Engine"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_feature"/>
+
+                <TextView
+                    android:id="@+id/tvEngine1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvEngine2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvEngine3"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- SEATS -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Seats"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_feature"/>
+
+                <TextView
+                    android:id="@+id/tvSeats1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvSeats2"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvSeats3"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#E8F1FF"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_compare_cell"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

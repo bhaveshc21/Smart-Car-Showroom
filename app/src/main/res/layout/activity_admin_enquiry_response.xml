@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="22dp"
+        android:paddingBottom="30dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enquiry Details"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review customer enquiry and send a response"
+            android:textSize="14sp"
+            android:textColor="#94A3B8"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Customer Details Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_admin_detail_card">
+
+            <!-- Section Label -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER INFORMATION"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.10"
+                android:layout_marginBottom="16dp"/>
+
+
+            <!-- Customer -->
+
+            <TextView
+                android:id="@+id/tvCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp"/>
+
+
+            <!-- Email -->
+
+            <TextView
+                android:id="@+id/tvCustomerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="14sp"
+                android:textColor="#A9B6C8"
+                android:paddingBottom="12dp"/>
+
+
+            <!-- Car -->
+
+            <TextView
+                android:id="@+id/tvEnquiryCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car:"
+                android:textSize="14sp"
+                android:textColor="#A9B6C8"
+                android:paddingBottom="12dp"/>
+
+
+            <!-- Type -->
+
+            <TextView
+                android:id="@+id/tvEnquiryType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type:"
+                android:textSize="14sp"
+                android:textColor="#A9B6C8"
+                android:paddingBottom="12dp"/>
+
+
+            <!-- Message -->
+
+            <TextView
+                android:id="@+id/tvEnquiryMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message:"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="12dp"/>
+
+
+            <!-- Status -->
+
+            <TextView
+                android:id="@+id/tvEnquiryStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Pending"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#70D49B"
+                android:background="@drawable/bg_available_badge"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Response Section -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADMIN RESPONSE"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#7EA6FF"
+            android:letterSpacing="0.10"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="9dp"/>
+
+
+        <EditText
+            android:id="@+id/etAdminResponse"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:hint="Write your response..."
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#718096"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:background="@drawable/bg_admin_input"/>
+
+
+        <!-- Send Response -->
+
+        <Button
+            android:id="@+id/btnSendResponse"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="SEND RESPONSE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_admin_button"
+            android:layout_marginTop="16dp"
+            android:padding="0dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

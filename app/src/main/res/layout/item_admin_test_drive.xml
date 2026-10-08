@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/bg_admin_test_drive_item">
+
+    <!-- Customer -->
+
+    <TextView
+        android:id="@+id/tvTestDriveCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer: Bhavesh"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:includeFontPadding="false" />
+
+    <!-- Email -->
+
+    <TextView
+        android:id="@+id/tvTestDriveEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: bhavesh@gmail.com"
+        android:textSize="14sp"
+        android:textColor="#D0D8E4"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false" />
+
+    <!-- Car -->
+
+    <TextView
+        android:id="@+id/tvTestDriveCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car: Maruti Swift"
+        android:textSize="14sp"
+        android:textColor="#D0D8E4"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false" />
+
+    <!-- Date -->
+
+    <TextView
+        android:id="@+id/tvTestDriveDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 30/08/2026"
+        android:textSize="14sp"
+        android:textColor="#D0D8E4"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false" />
+
+    <!-- Time -->
+
+    <TextView
+        android:id="@+id/tvTestDriveTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time: 16:00"
+        android:textSize="14sp"
+        android:textColor="#D0D8E4"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false" />
+
+    <!-- Message -->
+
+    <TextView
+        android:id="@+id/tvTestDriveMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginTop="8dp"
+        android:includeFontPadding="false" />
+
+    <!-- Status -->
+
+    <TextView
+        android:id="@+id/tvTestDriveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Rejected"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#E56B6F"
+        android:background="@drawable/bg_admin_status_badge"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="12dp"
+        android:includeFontPadding="false" />
+
+</LinearLayout>

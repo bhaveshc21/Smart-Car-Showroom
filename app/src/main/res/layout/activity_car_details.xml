@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <!-- ==================== HERO IMAGE ==================== -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#0D1A2B">
+
+            <ImageView
+                android:id="@+id/ivCarImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:contentDescription="Car Image"
+                android:padding="12dp"/>
+
+            <!-- Back-style visual indicator -->
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_profile_circle_dark"/>
+
+        </FrameLayout>
+
+
+        <!-- ==================== CONTENT ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="10dp">
+
+            <!-- Car Name -->
+
+            <TextView
+                android:id="@+id/tvCarName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hyundai Creta"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+
+            <!-- Price -->
+
+            <TextView
+                android:id="@+id/tvCarPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹12,50,000"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:layout_marginTop="6dp"/>
+
+
+            <!-- Main specifications -->
+
+            <TextView
+                android:id="@+id/tvCarSpecifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petrol • Automatic • 17 km/l"
+                android:textSize="14sp"
+                android:textColor="#A9B6C8"
+                android:layout_marginTop="8dp"/>
+
+
+            <!-- ==================== SPECIFICATIONS ==================== -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <!-- Engine -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_spec_box">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENGINE"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#7F8EA3"/>
+
+                    <TextView
+                        android:id="@+id/tvCarEngine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1497 cc"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+
+                <!-- Seats -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_spec_box">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEATS"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#7F8EA3"/>
+
+                    <TextView
+                        android:id="@+id/tvCarSeats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- ==================== FEATURES ==================== -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Features"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="26dp"/>
+
+            <TextView
+                android:id="@+id/tvCarFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunroof, Airbags, ABS, Touchscreen"
+                android:textSize="14sp"
+                android:textColor="#A9B6C8"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="9dp"/>
+
+
+            <!-- ==================== AVAILABILITY ==================== -->
+
+            <TextView
+                android:id="@+id/tvCarAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availability: Available"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#70D49B"
+                android:background="@drawable/bg_available_badge"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_marginTop="18dp"/>
+
+
+            <!-- ==================== ACTIONS ==================== -->
+
+            <!-- Favorite -->
+
+            <Button
+                android:id="@+id/btnFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="❤️  Add to Favorites"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#9DBBFF"
+                android:background="@drawable/bg_outline_button"
+                android:layout_marginTop="22dp"
+                android:padding="0dp"/>
+
+
+            <!-- EMI -->
+
+            <Button
+                android:id="@+id/btnEMI"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="💰  EMI CALCULATOR"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dark_action"
+                android:layout_marginTop="9dp"
+                android:padding="0dp"/>
+
+
+            <!-- Enquiry -->
+
+            <Button
+                android:id="@+id/btnEnquiry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="📩  SEND ENQUIRY"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dark_action"
+                android:layout_marginTop="9dp"
+                android:padding="0dp"/>
+
+
+            <!-- Test Drive - Primary Action -->
+
+            <Button
+                android:id="@+id/btnTestDrive"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="📅  BOOK TEST DRIVE"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_blue_button"
+                android:layout_marginTop="10dp"
+                android:padding="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="22dp"
+        android:paddingBottom="30dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Drive Details"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review and manage this test drive request"
+            android:textSize="14sp"
+            android:textColor="#94A3B8"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Test Drive Details Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_admin_detail_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOOKING INFORMATION"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.10"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTestDriveDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:lineSpacingExtra="6dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Reschedule -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESCHEDULE"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#7EA6FF"
+            android:letterSpacing="0.10"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="9dp"/>
+
+
+        <EditText
+            android:id="@+id/etRescheduleDate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="New Date"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#718096"
+            android:singleLine="true"
+            android:inputType="date"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/bg_admin_input"/>
+
+
+        <EditText
+            android:id="@+id/etRescheduleTime"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="New Time"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#718096"
+            android:singleLine="true"
+            android:inputType="time"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/bg_admin_input"
+            android:layout_marginTop="9dp"/>
+
+
+        <!-- Confirm -->
+
+        <Button
+            android:id="@+id/btnConfirmTestDrive"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="✅  CONFIRM TEST DRIVE"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_confirm_button"
+            android:layout_marginTop="18dp"
+            android:padding="0dp"/>
+
+
+        <!-- Reject -->
+
+        <Button
+            android:id="@+id/btnRejectTestDrive"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="❌  REJECT TEST DRIVE"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_reject_button"
+            android:layout_marginTop="9dp"
+            android:padding="0dp"/>
+
+
+        <!-- Reschedule -->
+
+        <Button
+            android:id="@+id/btnRescheduleTestDrive"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="📅  RESCHEDULE"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_admin_dashboard_button"
+            android:layout_marginTop="9dp"
+            android:padding="0dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

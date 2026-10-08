@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="45dp"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/tvLogo"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:src="@drawable/car_logo"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_logo_circle"
+            android:clipToOutline="true"
+            android:contentDescription="Smart Motors Logo"/>
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMART MOTORS"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.08"
+            android:layout_marginTop="22dp"/>
+
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DRIVE YOUR DREAM"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:textColor="#7EA6FF"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="35dp"/>
+
+
+        <!-- Login Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_dark_card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to continue"
+                android:textSize="13sp"
+                android:textColor="#94A3B8"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Email"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/bg_dark_input"/>
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Password"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_dark_input"/>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="LOGIN"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_blue_button"
+                android:layout_marginTop="18dp"
+                android:padding="0dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?  Register"
+            android:textSize="14sp"
+            android:textColor="#CBD5E1"
+            android:gravity="center"
+            android:padding="18dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+        <Button
+            android:id="@+id/btnAdminLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="⚙  ADMIN LOGIN"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#7EA6FF"
+            android:background="@drawable/bg_outline_button"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

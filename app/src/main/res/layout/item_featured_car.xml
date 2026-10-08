@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:gravity="center">
+
+    <!-- Main Featured Card -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_featured_card"
+        android:padding="16dp">
+
+        <!-- Car Image -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@drawable/bg_featured_image"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivFeaturedCarImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:contentDescription="Featured Car Image"/>
+
+        </FrameLayout>
+
+
+        <!-- Car Name -->
+
+        <TextView
+            android:id="@+id/tvFeaturedCarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hyundai Creta"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="14dp"/>
+
+
+        <!-- Purple Accent Line -->
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:background="#7C5CFF"/>
+
+
+        <!-- Price -->
+
+        <TextView
+            android:id="@+id/tvFeaturedCarPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹12.5 Lakh"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="#E5E7EB"
+            android:gravity="center"
+            android:layout_marginTop="9dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

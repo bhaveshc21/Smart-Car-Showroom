@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/bg_admin_car_item">
+
+    <!-- Car Name -->
+
+    <TextView
+        android:id="@+id/tvAdminCarName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kia Sonet"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#F6F8FC" />
+
+    <!-- Price -->
+
+    <TextView
+        android:id="@+id/tvAdminCarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: ₹1500000"
+        android:textSize="15sp"
+        android:textColor="#AAB6C8"
+        android:layout_marginTop="8dp" />
+
+    <!-- Availability -->
+
+    <TextView
+        android:id="@+id/tvAdminCarAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Availability: Available"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#35B88A"
+        android:background="@drawable/bg_available_badge"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

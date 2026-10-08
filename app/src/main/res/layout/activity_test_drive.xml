@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="22dp"
+        android:paddingBottom="30dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book a Test Drive 🚗"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a convenient date and time for your test drive"
+            android:textSize="13sp"
+            android:textColor="#94A3B8"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Selected Car Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_testdrive_car_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECTED CAR"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:id="@+id/tvTestDriveCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car: Hyundai Creta"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Schedule -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule Your Visit"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- Date -->
+
+        <EditText
+            android:id="@+id/etTestDriveDate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Test Drive Date"
+            android:inputType="date"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#7F8EA3"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_testdrive_input"/>
+
+
+        <!-- Time -->
+
+        <EditText
+            android:id="@+id/etTestDriveTime"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Preferred Time"
+            android:inputType="time"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#7F8EA3"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_testdrive_input"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- Book Button -->
+
+        <Button
+            android:id="@+id/btnBookTestDrive"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="BOOK TEST DRIVE"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_testdrive_button"
+            android:layout_marginTop="20dp"
+            android:padding="0dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

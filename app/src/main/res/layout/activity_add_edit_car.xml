@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:id="@+id/tvCarFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Car"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the vehicle details below"
+            android:textSize="14sp"
+            android:textColor="#94A3B8"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Form Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_dark_card">
+
+            <!-- Brand -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRAND"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.08"/>
+
+            <EditText
+                android:id="@+id/etBrand"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter brand"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="7dp"/>
+
+
+            <!-- Car Name -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAR NAME"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.08"
+                android:layout_marginTop="17dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter car name"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="7dp"/>
+
+
+            <!-- Model -->
+
+            <EditText
+                android:id="@+id/etModel"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Model"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Price -->
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Price (₹)"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Fuel -->
+
+            <EditText
+                android:id="@+id/etFuelType"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Fuel Type"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Transmission -->
+
+            <EditText
+                android:id="@+id/etTransmission"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Transmission"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Mileage -->
+
+            <EditText
+                android:id="@+id/etMileage"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Mileage"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Engine -->
+
+            <EditText
+                android:id="@+id/etEngine"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Engine"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Seats -->
+
+            <EditText
+                android:id="@+id/etSeats"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Seating Capacity"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Features -->
+
+            <EditText
+                android:id="@+id/etFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:hint="Features"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:padding="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Availability -->
+
+            <EditText
+                android:id="@+id/etAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Availability"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7F8EA3"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_dark_input"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Image -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAR IMAGE"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.08"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/ivCarImagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:background="#101C2D"
+                android:contentDescription="Car Image Preview"/>
+
+
+            <Button
+                android:id="@+id/btnChooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="📷  CHOOSE IMAGE"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:background="@drawable/bg_outline_button"
+                android:layout_marginTop="10dp"
+                android:padding="0dp"/>
+
+
+            <!-- Save -->
+
+            <Button
+                android:id="@+id/btnSaveCar"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="SAVE CAR"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_blue_button"
+                android:layout_marginTop="18dp"
+                android:padding="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

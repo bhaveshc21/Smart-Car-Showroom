@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="22dp"
+        android:paddingBottom="30dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMI Calculator 💰"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate your estimated monthly car payment"
+            android:textSize="13sp"
+            android:textColor="#94A3B8"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Selected Car Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_emi_car_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECTED CAR"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:id="@+id/tvSelectedCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car: Hyundai Creta"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvCarPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Price: ₹1250000"
+                android:textSize="15sp"
+                android:textColor="#A9B6C8"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Loan Details -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- Down Payment -->
+
+        <EditText
+            android:id="@+id/etDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Down Payment (₹)"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#7F8EA3"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_emi_input"/>
+
+
+        <!-- Interest Rate -->
+
+        <EditText
+            android:id="@+id/etInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Interest Rate (%)"
+            android:inputType="numberDecimal"
+            android:text="8.5"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#7F8EA3"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_emi_input"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- Loan Tenure -->
+
+        <EditText
+            android:id="@+id/etLoanTenure"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Loan Tenure (Years)"
+            android:inputType="number"
+            android:text="5"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#7F8EA3"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_emi_input"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- Calculate -->
+
+        <Button
+            android:id="@+id/btnCalculateEMI"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="CALCULATE EMI"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_emi_button"
+            android:layout_marginTop="18dp"
+            android:padding="0dp"/>
+
+
+        <!-- Results Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Summary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- Results Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_emi_result_card">
+
+            <TextView
+                android:id="@+id/tvLoanAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount:"
+                android:textSize="15sp"
+                android:textColor="#A9B6C8"/>
+
+            <TextView
+                android:id="@+id/tvMonthlyEMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monthly EMI:"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#7EA6FF"
+                android:layout_marginTop="14dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#263A57"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Interest:"
+                android:textSize="15sp"
+                android:textColor="#A9B6C8"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount Payable:"
+                android:textSize="15sp"
+                android:textColor="#A9B6C8"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

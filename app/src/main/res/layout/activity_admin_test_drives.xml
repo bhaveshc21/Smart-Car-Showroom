@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#07111F"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:paddingTop="22dp"
+    android:paddingBottom="12dp">
+
+    <!-- Header -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Drive Bookings 🚗"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View and manage customer test drive requests"
+        android:textSize="14sp"
+        android:textColor="#94A3B8"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <!-- Status Filters -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPendingTestDrives"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="PENDING"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_admin_dashboard_button"
+            android:padding="0dp"/>
+
+        <Button
+            android:id="@+id/btnConfirmedTestDrives"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CONFIRMED"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_admin_dashboard_button"
+            android:layout_marginStart="7dp"
+            android:padding="0dp"/>
+
+        <Button
+            android:id="@+id/btnRejectedTestDrives"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="REJECTED"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_admin_dashboard_button"
+            android:layout_marginStart="7dp"
+            android:padding="0dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Section -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Requests"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <!-- Booking List -->
+
+    <ListView
+        android:id="@+id/listAdminTestDrives"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"/>
+
+</LinearLayout>

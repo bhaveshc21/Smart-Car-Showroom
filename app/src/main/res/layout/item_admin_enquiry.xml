@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/bg_admin_enquiry_item">
+
+    <!-- Customer -->
+
+    <TextView
+        android:id="@+id/tvEnquiryCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer: Rahul"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:includeFontPadding="false" />
+
+    <!-- Car -->
+
+    <TextView
+        android:id="@+id/tvEnquiryCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car: Tata Punch"
+        android:textSize="14sp"
+        android:textColor="#D0D8E4"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false" />
+
+    <!-- Type -->
+
+    <TextView
+        android:id="@+id/tvEnquiryType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type: Delivery"
+        android:textSize="14sp"
+        android:textColor="#D0D8E4"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false" />
+
+    <!-- Message -->
+
+    <TextView
+        android:id="@+id/tvEnquiryMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message: When can I get the delivery?"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginTop="8dp"
+        android:includeFontPadding="false" />
+
+    <!-- Status -->
+
+    <TextView
+        android:id="@+id/tvEnquiryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Responded"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#35B88A"
+        android:background="@drawable/bg_admin_status_badge"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="12dp"
+        android:includeFontPadding="false" />
+
+</LinearLayout>
