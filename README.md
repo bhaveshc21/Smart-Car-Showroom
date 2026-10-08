@@ -245,7 +245,7 @@ The application can be further enhanced with:
 - 📊 Advanced admin analytics
 
 📸 Screenshots
-Screenshots of the application can be added here to demonstrate the major features and user interfaces.
+
 Login
 <img width="273" height="610" alt="image" src="https://github.com/user-attachments/assets/c976c46e-21fe-449b-8433-6c186a317dc5" />
 
